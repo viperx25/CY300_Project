@@ -3,6 +3,7 @@
 ## Setup/Breakdown
 To set up the namespace environment, run the following command:\
 `# ./setup.sh`\
+\
 To break down the namespace environment, run the following:\
 `# ./breakdown.sh`\
 
