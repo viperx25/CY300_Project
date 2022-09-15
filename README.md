@@ -1,8 +1,10 @@
 # CY300_Project
 
-## Setup
+## Setup/Breakdown
 To set up the namespace environment, run the following command:\
-`# ./setup.sh`
+`# ./setup.sh`\
+To break down the namespace environment, run the following:\
+`# ./breakdown.sh`\
 
 ## Utilizing Namespaces
 To run a command from a given namespace, use the following:\
