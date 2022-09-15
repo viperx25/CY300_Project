@@ -6,6 +6,9 @@ To set up the namespace environment, run the following command:\
 \
 To break down the namespace environment, run the following:\
 `# ./breakdown.sh`\
+\
+See visualization:\
+![image](diagram.jpeg)
 
 ## Utilizing Namespaces
 To run a command from a given namespace, use the following:\
