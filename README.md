@@ -8,7 +8,7 @@ To break down the namespace environment, run the following:\
 `# ./breakdown.sh`\
 \
 See visualization:\
-![image](diagram.jpeg)
+![image](diagram.jpg)
 
 ## Utilizing Namespaces
 To run a command from a given namespace, use the following:\
