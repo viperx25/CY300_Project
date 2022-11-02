@@ -4,6 +4,7 @@ import socket
 import struct
 import ipaddress
 import os
+import socket
 
 # https://www.uv.mx/personal/angelperez/files/2018/10/sniffers_texto.pdf
 
@@ -48,9 +49,9 @@ def tcp_head(raw_data):
 
 
 def main():
-    n = os.fork()
+    #n = os.fork()
 
-    if n > 0:
+    if 1: #n > 0:
         s = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
         while True:
             raw_data, addr = s.recvfrom(65535)
@@ -76,6 +77,8 @@ def main():
                         if tcp[0] == 8000 or tcp[1] == 8000:
                             print('\t\t - HTTP Data:')
                             print(tcp[10])
+                    s = socket.socket(socket.AF_UNIX, socket.SOCK_RAW)
+                    s.sendto(raw_data, "/tmp/testsocket")
 
     else:
         print('you are the parent')
